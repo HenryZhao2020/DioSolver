@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/conf">
+        <file>Styles.qss</file>
+    </qresource>
+    <qresource prefix="/font">
+        <file>JetBrainsMono-VariableFont_wght.ttf</file>
+    </qresource>
+</RCC>
