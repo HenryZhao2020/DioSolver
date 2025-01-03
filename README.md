@@ -10,15 +10,3 @@ Preview:
 
 <img width="582" alt="image" src="https://github.com/user-attachments/assets/2df794c0-ddb3-48b0-9dd5-bdba0a1f8ab0" />
 
-Relevant Theorems:
-  - Extended Euclidean Algorithm
-  - Bézout's Lemma
-  - Linear Diophantine Equation Theorem, Part 1
-  - Linear Diophantine Equation Theorem, Part 2
-
-Reference: 
-
-  Language and Proofs in Algebra: An Introduction, 
-  Version 1.3, 
-  © Faculty of Mathematics, University of Waterloo, 
-  September 21, 2024
