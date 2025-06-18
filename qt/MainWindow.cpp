@@ -7,7 +7,7 @@
 #include <QPushButton>
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
-    setWindowTitle("LDE Solver");
+    setWindowTitle("DioSolver");
 
     QWidget *mainWidget = new QWidget(this);
     setCentralWidget(mainWidget);

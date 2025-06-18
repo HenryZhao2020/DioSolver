@@ -100,6 +100,7 @@ int main() {
     test_intvl_h();
     test_ineq_h();
 
+    // --- Tests ---
     // clear_screen();
     // solve_lde(0, 0, 0, REAL, NONNEG);
     // solve_lde(0, 0, 10, REAL, REAL);
