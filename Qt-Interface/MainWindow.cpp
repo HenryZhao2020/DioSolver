@@ -1,6 +1,6 @@
 #include "MainWindow.h"
 #include "Dialog.h"
-#include "../lde.h"
+#include "../C-Backend/lde.h"
 
 #include <QGridLayout>
 #include <QLabel>
