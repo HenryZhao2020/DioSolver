@@ -1,4 +1,4 @@
-# LDE Solver
+# DioSolver
 
 While taking MATH 135 at the University of Waterloo, I became fascinated by linear Diophantine equations (ax + by = c). I wanted to create a tool to simplify learning, guide students through each step, and help verify solutions.
 
