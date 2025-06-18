@@ -20,7 +20,7 @@ Dialog::Dialog(MainWindow *win, const QString &title) : QDialog(win) {
 
 Dialog::~Dialog() {}
 
-AboutDialog::AboutDialog(MainWindow *win) : Dialog(win, "About LDE Solver") {
+AboutDialog::AboutDialog(MainWindow *win) : Dialog(win, "About DioSolver") {
     setModal(true);
 
     QTextBrowser *editor = new QTextBrowser(this);
