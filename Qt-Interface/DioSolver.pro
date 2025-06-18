@@ -9,23 +9,23 @@ CONFIG += c++20
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    ../C/betterc.c \
-    ../C/eea.c \
-    ../C/ineq.c \
-    ../C/intvl.c \
-    ../C/lde.c \
-    ../C/list.c \
+    ../C-Backend/betterc.c \
+    ../C-Backend/eea.c \
+    ../C-Backend/ineq.c \
+    ../C-Backend/intvl.c \
+    ../C-Backend/lde.c \
+    ../C-Backend/list.c \
     Dialog.cpp \
     Main.cpp \
     MainWindow.cpp
 
 HEADERS += \
-    ../C/betterc.h \
-    ../C/eea.h \
-    ../C/ineq.h \
-    ../C/intvl.h \
-    ../C/lde.h \
-    ../C/list.h \
+    ../C-Backend/betterc.h \
+    ../C-Backend/eea.h \
+    ../C-Backend/ineq.h \
+    ../C-Backend/intvl.h \
+    ../C-Backend/lde.h \
+    ../C-Backend/list.h \
     Dialog.h \
     MainWindow.h
 

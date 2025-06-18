@@ -1,6 +1,6 @@
 #include "Dialog.h"
 #include "MainWindow.h"
-#include "../lde.h"
+#include "../C-Backend/lde.h"
 
 #include <QLabel>
 #include <QTextBrowser>
