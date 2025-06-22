@@ -20,7 +20,6 @@ class MainWindow : public QMainWindow {
 
 public:
     MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
 
     void clearLDE();
     LDE solveLDE();
@@ -35,7 +34,6 @@ class IntLineEdit : public QLineEdit {
 
 public:
     IntLineEdit(QWidget *parent = nullptr);
-    ~IntLineEdit();
 
     int value();
 };
@@ -45,7 +43,6 @@ class LDEFrame : public QFrame {
 
 public:
     LDEFrame(MainWindow *win);
-    ~LDEFrame();
 
     int aValue();
     int bValue();
@@ -68,7 +65,6 @@ class DomainBox : public QGroupBox {
 
 public:
     DomainBox(const QString &title, LDEFrame *frame);
-    ~DomainBox();
 
     Interval interval();
 
@@ -82,7 +78,6 @@ class IntervalFrame : public QFrame {
 
 public:
     IntervalFrame(DomainBox *domainBox);
-    ~IntervalFrame();
 
     Interval customInterval();
 
@@ -99,5 +94,4 @@ class ButtonFrame : public QFrame {
 
 public:
     ButtonFrame(MainWindow *win);
-    ~ButtonFrame();
 };

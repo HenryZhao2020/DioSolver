@@ -18,8 +18,6 @@ Dialog::Dialog(MainWindow *win, const QString &title) : QDialog(win) {
     dialogLayout->addWidget(okButton, 0, Qt::AlignCenter);
 }
 
-Dialog::~Dialog() {}
-
 AboutDialog::AboutDialog(MainWindow *win) : Dialog(win, "About DioSolver") {
     setModal(true);
 
@@ -48,8 +46,6 @@ AboutDialog::AboutDialog(MainWindow *win) : Dialog(win, "About DioSolver") {
     editor->insertHtml("Visit <a href=github.com/HenryZhao2020>My GitHub</a>");
 }
 
-AboutDialog::~AboutDialog() {}
-
 ResultDialog::ResultDialog(MainWindow *win, LDE lde) : Dialog(win, "Result") {
     QTextEdit *editor = new QTextEdit(this);
     editor->setReadOnly(true);
@@ -64,5 +60,3 @@ ResultDialog::ResultDialog(MainWindow *win, LDE lde) : Dialog(win, "Result") {
     }
     list_free(result);
 }
-
-ResultDialog::~ResultDialog() {}

@@ -31,8 +31,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     resize(450, height());
 }
 
-MainWindow::~MainWindow() {}
-
 void MainWindow::clearLDE() {
     mainLayout->removeWidget(ldeFrame);
     ldeFrame->setParent(nullptr);
@@ -55,8 +53,6 @@ IntLineEdit::IntLineEdit(QWidget *parent) : QLineEdit(parent) {
     QIntValidator *intValidator = new QIntValidator(this);
     setValidator(intValidator);
 }
-
-IntLineEdit::~IntLineEdit() {}
 
 int IntLineEdit::value() {
     return text().toInt();
@@ -85,8 +81,6 @@ LDEFrame::LDEFrame(MainWindow *win) : QFrame(win) {
     yBox = new DomainBox("Domain of y", this);
     gridLayout->addWidget(yBox, 2, 0, 1, 6);
 }
-
-LDEFrame::~LDEFrame() {}
 
 int LDEFrame::aValue() {
     return aField->value();
@@ -131,8 +125,6 @@ DomainBox::DomainBox(const QString &title, LDEFrame *frame)
     });
 }
 
-DomainBox::~DomainBox() {}
-
 Interval DomainBox::interval() {
     int index = intvlBox->currentIndex();
     switch (index) {
@@ -171,8 +163,6 @@ IntervalFrame::IntervalFrame(DomainBox *domainBox) : QFrame(domainBox) {
     gridLayout->addWidget(rightBox, 1, 2);
 }
 
-IntervalFrame::~IntervalFrame() {}
-
 Interval IntervalFrame::customInterval() {
     int low = fromBox->text().isEmpty() ? NEG_INF : fromBox->value();
     int high = toBox->text().isEmpty() ? POS_INF : toBox->value();
@@ -206,5 +196,3 @@ ButtonFrame::ButtonFrame(MainWindow *win) : QFrame(win) {
     solveButton->setDefault(true);
     hboxLayout->addWidget(solveButton);
 }
-
-ButtonFrame::~ButtonFrame() {}

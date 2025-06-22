@@ -13,7 +13,6 @@ class Dialog : public QDialog {
 
 public:
     Dialog(MainWindow *win, const QString &title);
-    ~Dialog();
 
 protected:
     QVBoxLayout *dialogLayout;
@@ -25,7 +24,6 @@ class AboutDialog : public Dialog {
 
 public:
     AboutDialog(MainWindow *win);
-    ~AboutDialog();
 };
 
 class ResultDialog : public Dialog {
@@ -33,5 +31,4 @@ class ResultDialog : public Dialog {
 
 public:
     ResultDialog(MainWindow *win, LDE lde);
-    ~ResultDialog();
 };
